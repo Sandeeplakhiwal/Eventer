@@ -22,7 +22,7 @@ function AppLoader() {
     <Container
       maxWidth={"xl"}
       sx={{
-        backgroundColor: "ThreeDShadow",
+        backgroundColor: "#040714",
         height: "100vh",
         display: "flex",
         flexDirection: "column",

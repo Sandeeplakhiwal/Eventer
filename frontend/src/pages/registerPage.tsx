@@ -1,6 +1,7 @@
 import { Box, Button, Container, TextField, Typography } from "@mui/material";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import * as PageRoutes from "../constants/routes";
 
 function RegisterPage() {
   useEffect(() => {
@@ -31,7 +32,10 @@ function RegisterPage() {
           color={"blueviolet"}
           fontFamily={"serif"}
         >
-          Signup to Eventer
+          Signup to{" "}
+          <Link to={PageRoutes.HOME} style={{ textDecoration: "none" }}>
+            Eventer
+          </Link>
         </Typography>
         <form>
           <TextField
@@ -73,7 +77,7 @@ function RegisterPage() {
         </form>
       </Box>
       <Typography variant={"subtitle2"} textAlign={"center"} marginTop={3}>
-        Already have an account? <Link to={"/login"}>Login</Link> here
+        Already have an account? <Link to={PageRoutes.LOGIN}>Login</Link> here
       </Typography>
     </Container>
   );
